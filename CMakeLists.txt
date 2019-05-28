@@ -105,7 +105,7 @@ if (BUILD_EXAMPLES)
     target_link_libraries(json-schema-validate json-schema-validator)
 
     install(TARGETS json-schema-validate
-        DESTINATION ${CMAKE_INSTALL_BINDIR})
+        DESTINATION bin)
 
     add_executable(readme-json-schema app/readme.cpp)
     target_link_libraries(readme-json-schema json-schema-validator)
